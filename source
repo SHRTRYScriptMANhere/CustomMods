@@ -124,7 +124,7 @@ end
 
 function CreateFloor(FloorAttributes)
 	if not CreateElevator.List.Floors:FindFirstChild(FloorAttributes.Title or "[Floor]") then
-		local newFloor = CreateElevator.Floors.Hotel:Clone()
+		local newFloor = CreateElevator.List.Floors.Hotel:Clone()
 		newFloor.Visible = false
 		newFloor.Parent = CreateElevator.List.Floors
 		newFloor.Name = FloorAttributes.Title or "[Floor]"
