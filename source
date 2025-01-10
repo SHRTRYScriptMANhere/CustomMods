@@ -517,7 +517,7 @@ workspace.Lobby.LobbyElevators.ChildAdded:Connect(function(Elevator)
 		local TempMods = MainUI.LobbyFrame:WaitForChild("TempMods")
 		local BigListActive = false
 
-		for _, ModifierButton in pairs(CreateElevator.Modifiers:GetChildren()) do
+		for _, ModifierButton in pairs(CreateElevator.SidePanel.Modifiers:GetChildren()) do
 			if ModifierButton:IsA("TextButton") and ModifierButton.BackgroundTransparency <= 0.7 then
 				ModifierCount += 1
 			end
