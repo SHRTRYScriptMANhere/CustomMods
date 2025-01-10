@@ -346,7 +346,7 @@ function CustomModifiers:CreateFloor(Arguements)
 		Moddable = Arguements.Moddable
 	})
 
-	CreateElevator.Floors.Visible = shared.CustomFloors >= 100
+	CreateElevator.List.Floors.Visible = shared.CustomFloors >= 100
 	shared.EveryFloor[Arguements.Title] = AccessibleFloors[Arguements.Title]
 	CustomModifiers:Connotation('Created Floor "' .. Arguements.Title .. '".')
 	CustomModifiers:ReloadModifiers()
