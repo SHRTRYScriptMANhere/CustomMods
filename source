@@ -293,7 +293,7 @@ function CustomModifiers:CreateModifier(Arguements)
 		CustomModifiers:Caption("Go through the pages on the Modifiers frame to spawn the modifiers.")
 		
 		repeat
-			for _, ModifierButton in pairs(CreateElevator.List.Modifiers:GetChildren()) do
+			for _, ModifierButton in pairs(CreateElevator.SidePanel.Modifiers:GetChildren()) do
 				if ModifierButton:IsA("TextButton") and ModifierButton.Name == Arguements.Title then
 					Found = true
 					break
