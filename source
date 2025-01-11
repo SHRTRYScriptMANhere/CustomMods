@@ -538,7 +538,7 @@ workspace.Lobby.LobbyElevators.ChildAdded:Connect(function(Elevator)
 			end
 		end
 
-		for _, Modifier in pairs(CreateElevator.Modifiers:GetChildren()) do
+		for _, Modifier in pairs(CreateElevator.SidePanel.Modifiers:GetChildren()) do
 			if Modifier:IsA("TextButton") and Modifier.BackgroundTransparency <= 0.7 then
 				if BigListActive then
 					if TempMods.BigList:FindFirstChild(Modifier.Name) then
